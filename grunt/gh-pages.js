@@ -1,7 +1,8 @@
 module.exports = {
     dist: {
         options: {
-            base: 'web'
+            base: 'web',
+            branch: 'master'
         },
         src: ['**']
     },
