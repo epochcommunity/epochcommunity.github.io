@@ -1,0 +1,25 @@
+---
+layout: base
+title: Home page
+---
+
+{% assign posts = site.posts | sort: 'group' %}
+
+<main class="post__main">
+    <aside>
+        <a class="nav-toggler toggle-push-right">Menu</a>
+    </aside>
+	<ul class="posts grid">
+        {% for post in site.posts %}
+            <li id="post__{{ post.title | slugify }}" class="post__intro column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__4-of-12--large">
+                <a href="{{ post.url }}" class="posts__more">
+                    <div class="posts__inner">
+                            <h3>{{ post.title }}</h3>
+                            <time class="posts__date">{{ post.date | date: '%B %d, %Y' }}</time>
+                            <span>{{ post.category }}</span>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</main>
