@@ -13,3 +13,17 @@
 .logo__strap {
 	display: inline;
 }
+
+.show { 
+	height: 3em !important;
+	transition: height 1s ease;
+}
+
+.add_margin {
+	margin-top: 3em;
+	transition: all 0.5s;
+}
+
+.home {
+	float: left;
+}
