@@ -3,5 +3,8 @@ footer {
 }
 
 .ftr {
-	margin-top: 3 + $ratio#{em} !important;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  	right: 0;
 }

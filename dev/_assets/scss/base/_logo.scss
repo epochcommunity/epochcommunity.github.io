@@ -1,6 +1,8 @@
 .logo {
-	width: 400px;
-	margin: 2 + $ratio#{em} auto;
+	width: 200px;
+	position: absolute;
+	top: $ratio#{em};
+	left: $ratio#{em};
 }
 
 .icon__logo--white {
