@@ -1,4 +1,5 @@
 .pattern__header{
+    text-align: left !important;
     padding-top: $ratio#{em};
     padding-bottom: $ratio#{em};
     margin-bottom: $ratio#{em};
@@ -29,6 +30,7 @@
 }
 
 .pattern__nav{
+    text-align: left !important;
     margin-bottom: $ratio#{em};
 
     ul{

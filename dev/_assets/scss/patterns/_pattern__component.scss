@@ -1,4 +1,5 @@
 .pattern__components{
+    text-align: left !important;
     @include breakpoint(medium){
         width: 75%;
         margin-left: 25%;
@@ -7,6 +8,7 @@
         width: 80%;
         margin-left: 20%;
     }
+
 }
 
 .pattern__component {
@@ -20,6 +22,7 @@
 }
 
 .pattern__component__details{
+    text-align: left !important;
     > h3{
         padding-top: 1em;
     }
@@ -30,6 +33,7 @@
 }
 
 .pattern__component__example {
+    text-align: left !important;
     @extend .clearfix;
 
     padding: $ratio#{em};
@@ -56,6 +60,7 @@
 }
 
 .pattern__component__header{
+    text-align: left !important;
     padding-top: $ratio#{em};
     margin-bottom: $ratio#{em};
     border-bottom: 1px solid $color__gray;

@@ -18,7 +18,7 @@ module.exports = {
         ]
     },
     images: {
-        files: ['dev/_assets/imgs/{,*/,*/*/}*.{jpg,jpeg,png,gif}'],
+        files: ['dev/_assets/imgs/{,*/,*/*/}*.{jpg,jpeg,png,gif,svg}'],
         tasks: [
             'sprite',
             'copy:images'
