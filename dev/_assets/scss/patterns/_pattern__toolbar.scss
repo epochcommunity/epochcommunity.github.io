@@ -16,6 +16,7 @@ html {
 .toolbar__home {
     margin: $ratio--inv#{em};
     display: inline-block;
+    float: left;
 }
 
 .toolbar__show {
