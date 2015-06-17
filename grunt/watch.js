@@ -8,13 +8,13 @@ module.exports = {
     },
     scripts: {
         files: ['dev/_assets/scripts/{,*/}*.js'],
-        tasks: ['copy:scripts']
+        tasks: ['browserify:dev']
     },
     svg: {
         files: ['dev/_assets/svg/*.svg'],
         tasks: [
             'svgstore:dev',
-            'recompile'
+            'regenerate'
         ]
     },
     images: {
@@ -37,10 +37,9 @@ module.exports = {
             'dev/_includes/*.html',
             'dev/_templates/*.{md,markdown,html}',
             'dev/_components/*.{md,markdown,html}',
-            'dev/_posts/*.{md,markdown,html}',
             'dev/_plugins/*.rb'
         ],
-        tasks: ['recompile']
+        tasks: ['regenerate']
     },
     configFiles: {
         files: ['gruntfile.js', 'grunt/*.{js,yaml}'],
