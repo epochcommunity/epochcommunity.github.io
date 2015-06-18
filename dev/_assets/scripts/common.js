@@ -6,3 +6,7 @@ var $ = global.window.$ = window.jQuery = require('../../../bower_components/jqu
 // ----------
 require('./components/testPlugin');
 $('body').logWidth();
+
+require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min')
+require('./components/mailchimp');
+$('body').mailchimp();

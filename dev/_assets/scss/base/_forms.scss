@@ -11,6 +11,12 @@
     margin-bottom:0;
 }
 
+label {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
 // Basic styles on inputs.
 
 %input{
@@ -19,7 +25,6 @@
     width: 100%;
     padding: $ratio--inv#{em};
     background-color: $color__white;
-    border: 1px solid $color__gray;
     color: $color__black;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
