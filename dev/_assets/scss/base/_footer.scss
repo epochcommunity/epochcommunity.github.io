@@ -4,7 +4,7 @@ footer {
 
 .ftr {
 	position: absolute;
-	bottom: 0;
+	bottom: $ratio#{em};
 	left: 0;
   	right: 0;
 }

@@ -15,68 +15,26 @@
 }
 
 .inner {
-background: -moz-linear-gradient(top,  rgba(16,20,23,0.65) 8%, rgba(16,20,23,0.12) 83%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,rgba(16,20,23,0.65)), color-stop(83%,rgba(16,20,23,0.12)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6101417', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-min-height: 1100px;
-
+    background: -moz-linear-gradient(top,  rgba(16,20,23,0.65) 8%, rgba(16,20,23,0.12) 83%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,rgba(16,20,23,0.65)), color-stop(83%,rgba(16,20,23,0.12)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(16,20,23,0.65) 8%,rgba(16,20,23,0.12) 83%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6101417', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    min-height: 1100px;
+    position: relative;
 }
 
 blockquote {
 	display: block;
-	margin-top: 12 + $ratio#{em};
-}
-
-#overlay {
-	background:rgb(0,159,171);
-    background:rgba(0,159,171,0.9);
-    width:100%;
-    height:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    display:none;
-    text-align:center;
-    cursor: pointer;
-    z-index: 2000;
-    animation-name: bounceInDown; 
-    animation-duration: 1s; 
-    animation-fill-mode: both; 
-}
-
-.overlay-inner {
-	text-align: center;
-    height: 625px;
-    max-width: 72em;
-    margin: auto;
-    position: absolute;
-    top: 18em;
-    color: #fff;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    p { width: 30em; margin: auto; }
-    a { color: $color__white; }
+	margin-top: 5 + $ratio#{em};
 
     @include breakpoint(small){
-        top: 5em;
+        margin-top: 15 + $ratio#{em};
     }
-}
 
-.overlay-inner__inner {
-	position: relative;
-}
-
-.close-lightbox { 
-	position: absolute;
-	top: -2em;
-	right: 5em;
-}
-
-.noscroll {
-	overflow:hidden;
+    @include breakpoint(medium){
+        margin-top: 9 + $ratio#{em};
+    }
 }

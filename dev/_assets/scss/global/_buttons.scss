@@ -15,6 +15,7 @@
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
+    -webkit-appearance: none;
 
     &:visited {
         color: $color__white;
@@ -74,6 +75,12 @@ button {
 // .button--alt {
 //     @extend %button--alt;
 // }
+
+input[type="submit"] {
+    margin: 0;
+    width: auto;
+    -webkit-appearance: none;
+}
 
 .button--active {
     background-color: $color__green;
