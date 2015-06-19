@@ -1,6 +1,6 @@
 %button {
-    background-color: $color__gray;
-    border: pow($ratio--inv, 4)#{em} solid $color__gray;
+    background-color: $color__blue;
+    border: pow($ratio--inv, 4)#{em} solid $color__blue;
     color: $color__white !important;
     cursor: pointer;
     display: inline-block;
@@ -26,6 +26,7 @@
     &:focus,
     &.zeroclipboard-is-hover {
         background: $color__gray--light;
+        border: pow($ratio--inv, 4)#{em} solid $color__gray--light;
         color: $color__white;
         fill: $color__white;
         outline: none;

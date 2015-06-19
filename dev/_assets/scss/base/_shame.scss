@@ -38,3 +38,8 @@ blockquote {
         margin-top: 9 + $ratio#{em};
     }
 }
+
+.error-message {
+	 clear: both;
+  	display: block;
+}

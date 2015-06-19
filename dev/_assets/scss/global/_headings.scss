@@ -1,16 +1,16 @@
 %hn{
    font-family: $heading-font;
-   font-weight: 300;
+   font-weight: 400;
+   font-style: italic;
    line-height: 1em;
    margin: 0 0 $ratio--inv#{em};
-   text-transform: uppercase;
    -webkit-font-smoothing: antialiased;
 }
 
 h1{
     @extend %hn;
 
-    font-size: pow($ratio, 2)#{em};
+    font-size: pow($ratio, 3)#{em};
 }
 
 h2{
