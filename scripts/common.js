@@ -298,6 +298,10 @@ require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min')
 require('./components/mailchimp');
 $('body').mailchimp();
 
+window.onload = function() {
+    $(".loading").fadeOut('slow');
+};
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"../../../bower_components/ajaxchimp/jquery.ajaxchimp.min":1,"../../../bower_components/jquery/dist/jquery.min":2,"../../../bower_components/js-md5/js/md5":3,"./components/mailchimp":5,"./components/testPlugin":6}],5:[function(require,module,exports){
 /*global define:false */
