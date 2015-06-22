@@ -1,7 +1,6 @@
 /*global define:false */
 $.fn.mailchimp = function (options) {
     return this.each(function () {
-        console.log('mailchimp');
         $('.form__mailchimp').ajaxChimp({
 			callback: mailchimpSuccess,
 			language: 'custom'
