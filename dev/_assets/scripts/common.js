@@ -10,3 +10,7 @@ $('body').logWidth();
 require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min')
 require('./components/mailchimp');
 $('body').mailchimp();
+
+window.onload = function() {
+    $(".loading").fadeOut('slow');
+};

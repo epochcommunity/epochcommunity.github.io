@@ -17,10 +17,11 @@ body{
     // min-height: 1100px;
 }
 
-.animate-in {
-  -webkit-animation-name: bounceInUp;
-          animation-name: bounceInUp;
+body {
+
 }
+
+
 
 %wrapper{
     max-width: map-get($breakpoints, medium);

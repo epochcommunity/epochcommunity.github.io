@@ -8,7 +8,10 @@
 @import "base/footer.scss";
 @import "base/logo.scss";
 
+@import "animations/animations.scss";
+
 @import "components/lightbox.scss";
+@import "components/loading.scss";
 
 @import "layout/clearfix.scss";
 @import "layout/structure.scss";
