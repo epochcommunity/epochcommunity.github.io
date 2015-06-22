@@ -291,8 +291,8 @@ var $ = global.window.$ = window.jQuery = require('../../../bower_components/jqu
 
 // Show Me The Code
 // ----------
-require('./components/testPlugin');
-$('body').logWidth();
+// require('./components/testPlugin');
+// $('body').logWidth();
 
 require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min')
 require('./components/mailchimp');
@@ -303,11 +303,10 @@ window.onload = function() {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../../bower_components/ajaxchimp/jquery.ajaxchimp.min":1,"../../../bower_components/jquery/dist/jquery.min":2,"../../../bower_components/js-md5/js/md5":3,"./components/mailchimp":5,"./components/testPlugin":6}],5:[function(require,module,exports){
+},{"../../../bower_components/ajaxchimp/jquery.ajaxchimp.min":1,"../../../bower_components/jquery/dist/jquery.min":2,"../../../bower_components/js-md5/js/md5":3,"./components/mailchimp":5}],5:[function(require,module,exports){
 /*global define:false */
 $.fn.mailchimp = function (options) {
     return this.each(function () {
-        console.log('mailchimp');
         $('.form__mailchimp').ajaxChimp({
 			callback: mailchimpSuccess,
 			language: 'custom'
@@ -345,13 +344,6 @@ $.fn.mailchimp = function (options) {
 				$('#mc-embedded-subscribe-form').append(error);
 			}
 		}
-    });
-};
-},{}],6:[function(require,module,exports){
-/*global define:false */
-$.fn.logWidth = function (options) {
-    return this.each(function () {
-        console.log('Plugin test', $(this).width());
     });
 };
 },{}]},{},[4]);
