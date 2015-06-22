@@ -29,7 +29,7 @@
 
 blockquote {
 	display: block;
-	margin-top: 5 + $ratio#{em};
+	margin-top: $ratio#{em};
 
     @include breakpoint(small){
         margin-top: 15 + $ratio#{em};
