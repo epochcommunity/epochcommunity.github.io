@@ -331,10 +331,10 @@ $.fn.mailchimp = function (options) {
 					$(this).slideUp();
 					$('body').removeClass('noscroll');
 				});
-				var message = ('Thanks, believe in yourself');
+				var message = ('Thanks, soar high');
 				$('#mc-embedded-subscribe-form').html(message);
 				$('#mc-embedded-subscribe-form').css({"color": "#FFFFFF"});
-				$('#mc-embedded-subscribe-form').css({"margin": "auto", "max-width": "16em" , "font-size": "50px", "font-weight": "bold"});
+				$('#mc-embedded-subscribe-form').css({"margin": "auto", "max-width": "16em" , "font-size": "40px", "font-style": "italic"});
 			} else {
 				var error = document.createElement('span');
 				error.className = 'error-message';
